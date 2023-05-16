@@ -1,0 +1,148 @@
+{
+    "roupas": [
+        {
+           "id": 1,
+           "titulo": "Camisa braba",
+           "preco": 100,
+           "genero": "masculino",
+           "descricao": "camisa muito boa, de ótima qualidade, e um preço acessível.",
+           "categoria": "camisa"
+        },
+        {
+           "id": 2,
+           "titulo": "Camisa braba",
+           "preco": 100,
+           "genero": "masculino",
+           "descricao": "camisa muito boa, de ótima qualidade, e um preço acessível.",
+           "categoria": "camisa"
+        },
+        {
+           "id": 3,
+           "titulo": "Camisa braba",
+           "preco": 100,
+           "genero": "masculino",
+           "descricao": "camisa muito boa, de ótima qualidade, e um preço acessível.",
+           "categoria": "camisa"
+        },
+        {
+           "id": 4,
+           "titulo": "Camiseta braba",
+           "preco": 80,
+           "genero": "masculino",
+           "descricao": "camiseta muito boa, de ótima qualidade, e um preço acessível.",
+           "categoria": "camiseta"
+        },
+        {
+           "id": 5,
+           "titulo": "Camiseta braba",
+           "preco": 80,
+           "genero": "masculino",
+           "descricao": "camiseta muito boa, de ótima qualidade, e um preço acessível.",
+           "categoria": "camiseta"
+        },
+        {
+           "id": 6,
+           "titulo": "Camiseta braba",
+           "preco": 80,
+           "genero": "masculino",
+           "descricao": "camiseta muito boa, de ótima qualidade, e um preço acessível.",
+           "categoria": "camiseta"
+        },
+        {
+           "id": 7,
+           "titulo": "Shorts brabo",
+           "preco": 90,
+           "genero": "masculino",
+           "descricao": "shorts muito bom, de ótima qualidade, e um preço acessível.",
+           "categoria": "shorts"
+        },
+        {
+           "id": 8,
+           "titulo": "Shorts brabo",
+           "preco": 90,
+           "genero": "masculino",
+           "descricao": "shorts muito bom, de ótima qualidade, e um preço acessível.",
+           "categoria": "shorts"
+        },
+        {
+           "id": 9,
+           "titulo": "Shorts brabo",
+           "preco": 90,
+           "genero": "masculino",
+           "descricao": "shorts muito bom, de ótima qualidade, e um preço acessível.",
+           "categoria": "shorts"
+        },
+        {
+           "id": 10,
+           "titulo": "Camisa braba",
+           "preco": 100,
+           "genero": "feminino",
+           "descricao": "camiseta muito boa, de ótima qualidade, e um preço acessível.",
+           "categoria": "camiseta"
+        },
+        {
+           "id": 11,
+           "titulo": "Camisa braba",
+           "preco": 100,
+           "genero": "feminino",
+           "descricao": "camiseta muito boa, de ótima qualidade, e um preço acessível.",
+           "categoria": "camiseta"
+        },
+        {
+           "id": 12,
+           "titulo": "Camisa braba",
+           "preco": 100,
+           "genero": "feminino",
+           "descricao": "camiseta muito boa, de ótima qualidade, e um preço acessível.",
+           "categoria": "camiseta"
+        },
+        {
+           "id": 13,
+           "titulo": "Camiseta braba",
+           "preco": 70,
+           "genero": "feminino",
+           "descricao": "camisa muito boa, de ótima qualidade, e um preço acessível.",
+           "categoria": "camisa"
+        },
+        {
+           "id": 14,
+           "titulo": "Camiseta braba",
+           "preco": 70,
+           "genero": "feminino",
+           "descricao": "camisa muito boa, de ótima qualidade, e um preço acessível.",
+           "categoria": "camisa"
+        },
+        {
+           "id": 15,
+           "titulo": "Camiseta braba",
+           "preco": 70,
+           "genero": "feminino",
+           "descricao": "camisa muito boa, de ótima qualidade, e um preço acessível.",
+           "categoria": "camisa"
+        },
+        {
+           "id": 15,
+           "titulo": "Shorts braba",
+           "preco": 80,
+           "genero": "feminino",
+           "descricao": "shorts muito bom, de ótima qualidade, e um preço acessível.",
+           "categoria": "shorts"
+        },
+        {
+           "id": 16,
+           "titulo": "Shorts braba",
+           "preco": 80,
+           "genero": "feminino",
+           "descricao": "shorts muito bom, de ótima qualidade, e um preço acessível.",
+           "categoria": "shorts"
+        },
+        {
+           "id": 17,
+           "titulo": "Shorts braba",
+           "preco": 80,
+           "genero": "feminino",
+           "descricao": "shorts muito bom, de ótima qualidade, e um preço acessível.",
+           "categoria": "shorts"
+        }
+    ]
+}
