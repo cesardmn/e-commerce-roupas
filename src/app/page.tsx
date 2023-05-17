@@ -1,5 +1,13 @@
+'use client'
+
+import Conteudo from "@/components/Conteudo"
+import Menu from "@/components/Menu"
+
 export default function Home() {
   return (
-    <h1>hello word!!</h1>
+    <>
+      <Menu />
+      {/* <Conteudo /> */}
+    </>
   )
 }
