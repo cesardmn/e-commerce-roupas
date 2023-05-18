@@ -7,6 +7,7 @@ import crianca from './crianca.png'
 
 
 const ModalContainer = styled.section<{display: string}>`
+    width: 100%;
     background-color: gray;
     position: absolute;
     top: 50%;
@@ -120,7 +121,7 @@ export default function ModalMenu({modalOpen, setModalOpen}: Props) {
         }
     ]
 
-    const [generoAtivo, setGeneroAtivo] = useState('')
+    const [generoAtivo, setGeneroAtivo] = useState('Masculino')
 
     const [categorias, setCategorias ] = useState<Categorias[]>([])
 
