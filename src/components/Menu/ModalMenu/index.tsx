@@ -7,37 +7,79 @@ import crianca from './crianca.png'
 
 
 const ModalContainer = styled.section<{display: string}>`
-    width: 70%;
-    height: 300px;
     background-color: gray;
-    display: ${props => props.display};
     position: absolute;
-    top: 100%;
+    top: 50%;
+    display: ${props => props.display};
+    @media screen and (min-width: 1024px){
+        width: 70%;
+        height: 300px;
+        background-color: gray;
+        display: ${props => props.display};
+        position: absolute;
+        top: 100%;
+    }
 `
 
 const GenerosContainer = styled.section`
     height: 130px;
     ul{
-        margin-left: 1rem;
-        li{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 0.5rem;
-            padding: 0.5rem;
-            margin: 0.5rem 0;
-            border-radius: 1rem;
-            color: #000;
-            img{
-                width: 80px;
-                height: 80px;
-                border-radius: 50%;
+        padding: 0 0.4rem;
+            li{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 0.5rem;
+                padding: 0.5rem;
+                margin: 0.5rem 0;
+                border-radius: 1rem;
+                color: #000;
+                img{
+                    width: 80px;
+                    height: 80px;
+                    border-radius: 50%;
+                }
+            }
+        }
+    @media screen and (min-width: 1024px){
+        height: 130px;
+        ul{
+            margin-left: 1rem;
+            li{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 0.5rem;
+                padding: 0.5rem;
+                margin: 0.5rem 0;
+                border-radius: 1rem;
+                color: #000;
+                img{
+                    width: 80px;
+                    height: 80px;
+                    border-radius: 50%;
+                }
             }
         }
     }
 `
 
 const CategoriasContainer = styled.section`
+    margin-top: 1rem;
+    padding: 1rem 0;
+        span{
+            font-size: 1.5rem;
+        }
+        ul{
+            margin-left: 1rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            li:hover{
+                color: #fff;
+            }
+        }
+@media screen and (min-width: 1024px){
     margin-top: 1rem;
         span{
             font-size: 1.5rem;
@@ -50,6 +92,7 @@ const CategoriasContainer = styled.section`
                 color: #fff;
             }
         }
+}
 `
 
 interface Props {
@@ -76,7 +119,6 @@ export default function ModalMenu({modalOpen, setModalOpen}: Props) {
             imagem: crianca
         }
     ]
-
 
     const [generoAtivo, setGeneroAtivo] = useState('')
 
@@ -109,7 +151,7 @@ export default function ModalMenu({modalOpen, setModalOpen}: Props) {
                 item: 'Shorts'
             }
         ]
-        
+
         switch (generoAtivo){
             case 'Masculino': 
             setCategorias(Masculino);
@@ -128,7 +170,11 @@ export default function ModalMenu({modalOpen, setModalOpen}: Props) {
             <GenerosContainer>
                 <ul>
                     {generos.map((item, index) => (
-                        <li style={{ border: generoAtivo === item.genero ? '2px solid #fff' : 'none', color:'#000' }} key={index} onMouseEnter={() => setGeneroAtivo(item.genero)}>
+                        <li 
+                            style={{ border: generoAtivo === item.genero ? '2px solid #fff' : 'none', color:'#000' }} 
+                            key={index} 
+                            onMouseEnter={() => setGeneroAtivo(item.genero)}
+                        >
                             <Image src={item.imagem} alt={String(item.imagem)} />
                             {item.genero}
                         </li>
@@ -140,7 +186,12 @@ export default function ModalMenu({modalOpen, setModalOpen}: Props) {
                 <ul>
                     <span>Roupas</span>
                     {categorias.map((item, index) => (
-                        <li key={index}>{item.item}</li>
+                        <li 
+                            key={index}
+                            onClick={() => setModalOpen(false)}
+                        >
+                            {item.item}
+                        </li>
                     ))}
                 </ul>
             </CategoriasContainer>
