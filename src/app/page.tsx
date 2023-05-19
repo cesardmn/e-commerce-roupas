@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
       <Menu />
-      {/* <Conteudo /> */}
+      <Conteudo />
     </>
   )
 }
