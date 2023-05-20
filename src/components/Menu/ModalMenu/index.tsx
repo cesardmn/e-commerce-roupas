@@ -153,12 +153,27 @@ export default function ModalMenu({modalOpen, setModalOpen}: Props) {
             }
         ]
 
+        const Infantil = [
+            {
+                item: 'Camisa'
+            },
+            {
+                item: 'Camiseta'
+            },
+            {
+                item: 'Shorts'
+            }
+        ]
+
         switch (generoAtivo){
             case 'Masculino': 
             setCategorias(Masculino);
             break
             case 'Feminino': 
             setCategorias(Feminino);
+            break
+            case 'Infantil': 
+            setCategorias(Infantil);
             break
             default:
             setCategorias([])

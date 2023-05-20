@@ -161,6 +161,33 @@
            "descricao": "shorts muito bom, de ótima qualidade, e um preço acessível.",
            "categoria": "shorts",
            "vendidos" : 17
+        },
+        {
+           "id": 19,
+           "titulo": "Camiseta",
+           "preco": 50,
+           "genero": "Infantil",
+           "descricao": "camiseta muito bom, de ótima qualidade, e um preço acessível.",
+           "categoria": "camiseta",
+           "vendidos" : 10
+        },
+        {
+           "id": 20,
+           "titulo": "Camiseta",
+           "preco": 50,
+           "genero": "Infantil",
+           "descricao": "camiseta muito bom, de ótima qualidade, e um preço acessível.",
+           "categoria": "camiseta",
+           "vendidos" : 16
+        },
+        {
+           "id": 21,
+           "titulo": "Camiseta",
+           "preco": 50,
+           "genero": "Infantil",
+           "descricao": "camiseta muito bom, de ótima qualidade, e um preço acessível.",
+           "categoria": "camiseta",
+           "vendidos" : 12
         }
     ]
 }
