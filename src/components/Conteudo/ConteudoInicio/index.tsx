@@ -1,15 +1,35 @@
 import React from 'react'
 import { styled } from 'styled-components'
-import json from '../../json/itens.json'
+import json from '../../../json/itens.json'
 import Image from 'next/image'
+import imagemBackground from './roupas1.jpg'
 
 const ConteudoContainer = styled.main`
-  margin-top: 30%;
+  margin-top: 3.5rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
   padding: 3rem 0;
+
+  @media screen and (min-width: 1024px){
+    margin-top: 0;
+    padding: 0;
+  }
   `
+
+const ImageBackground = styled.div`
+  img{
+    width: 100%;
+    height: 200px;
+  }
+
+  @media screen and (min-width: 1024px){
+    img{
+      height: 400px;
+    }
+  }
+`
+
 const MaisVendidosContainer = styled.section`
   h2{
     font-size: 1.3rem;
@@ -54,7 +74,7 @@ const AdicionadosRecentementeContainer = styled.section`
   }
 `
 
-export default function Conteudo() {
+export default function ConteudoInicio() {
   const produtos = json.roupas
   const mapProdutos = produtos.map(item => item)
 
@@ -62,6 +82,9 @@ export default function Conteudo() {
 
   return (
     <ConteudoContainer>
+      <ImageBackground>
+        <Image src={imagemBackground} alt='imagem de roupas'></Image>
+      </ImageBackground>
           <MaisVendidosContainer>
             <h2>Mais vendidos</h2>
             <ul>

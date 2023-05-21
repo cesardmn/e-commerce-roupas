@@ -180,6 +180,11 @@ export default function ModalMenu({modalOpen, setModalOpen}: Props) {
         }
     }, [generoAtivo])
 
+    const selecionarCategoria = () => {
+        setModalOpen(false)
+        setGeneroAtivo('Masculino')
+    }
+
 
     return (
         <ModalContainer display={modalOpen ? 'block' : 'none'} onMouseLeave={() => setModalOpen(false)}>
@@ -204,7 +209,7 @@ export default function ModalMenu({modalOpen, setModalOpen}: Props) {
                     {categorias.map((item, index) => (
                         <li 
                             key={index}
-                            onClick={() => setModalOpen(false)}
+                            onClick={() => selecionarCategoria()}
                         >
                             {item.item}
                         </li>

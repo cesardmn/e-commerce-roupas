@@ -1,13 +1,15 @@
 'use client'
 
-import Conteudo from "@/components/Conteudo"
+import ConteudoCategoria from "@/components/Conteudo/ConteudoCategoria"
+import ConteudoInicio from "@/components/Conteudo/ConteudoInicio"
 import Menu from "@/components/Menu"
 
 export default function Home() {
   return (
     <>
       <Menu />
-      <Conteudo />
+      {/* <ConteudoInicio /> */}
+      <ConteudoCategoria />
     </>
   )
 }
