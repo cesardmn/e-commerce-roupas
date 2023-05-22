@@ -1,7 +1,7 @@
 import { styled } from "styled-components"
 import itens from '../../../json/itens.json'
 import Image from "next/image"
-import Filtrar from "@/components/Filtrar"
+import Filtrar from "@components/Filtrar"
 
 const ConteudoCategoriaContainer = styled.section`
     margin-top: 8rem;
